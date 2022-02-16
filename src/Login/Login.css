@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap');
+:root{
+    --blue:#3c6382;
+    --dark-blue:#0a3d62;
+    --red:#ff3838;
+    --purple:#814096;
+    --pink:#F83292;
+    --gradient:linear-gradient(90deg, var(--orange), var(--pink));
+    --orange:#FF8C00;
+
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+      margin:0; padding:0;
+     
+  }
+.login{
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+   
+}
+.login .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.top-left {
+    position: absolute;
+    top: 16px;
+    left: 36px;
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+.login .imgBx:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background:linear-gradient(225deg,#e91e63,#03a9f4); */
+    z-index:1;
+    mix-blend-mode: screen;
+}
+.login .imgBx .imgtwo img{
+    position: absolute;
+    margin-top: 10rem;
+    
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.login .imgBx .imgone img{
+    margin-top: 4rem;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top:0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}
+.login .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.login .contentBx .formBx{
+    width: 60%;
+    text-align: left;
+    background-color: #fff;
+    z-index: 1;
+  
+
+}
+.login .contentBx .formBx h2{
+    color: #03a9f4;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.login .contentBx .formBx .inputBx{
+    margin-bottom:  20px;
+}
+
+.login .contentBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+   display: inline-block;
+    color:#03a9f4;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+    
+    
+}
+.login .contentBx .formBx .inputBx input {
+    width: 85%;
+    padding: 10px 20px;
+    outline:  none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing:  1px;
+    color: #607d8b;
+    background:transparent;
+    border-radius: 30px;
+}
+.login .contentBx .formBx .inputBx button {
+
+    width: 95%;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing:  1px;
+    cursor: pointer;
+    background:#03a9f4;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    
+}
+
+.login .contentBx .formBx .remember{
+    margin-bottom: 10px;
+    color:#03a9f4;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+.login .contentBx .formBx .inputBx p {
+    font-size: 20px;
+}
+.login .contentBx .formBx .inputBx p a{
+
+  font-size: 20px;
+  padding-left: 10px;
+}
+.login .contentBx .formBx .sci
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.login .contentBx .formBx .sci li{
+    list-style:  none;
+    width:  50px;
+    height:  50px;
+    display: flex;
+    justify-items:  center;
+    align-items:  center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    color:  white;
+  
+    margin:  0 7px;
+    text-align:  center;
+    font-size:  4rem;
+    background-color: #03a9f4;
+}
+.login .contentBx .formBx .sci :hover{
+    background-color: #ff4584;
+}
+.login .contentBx .formBx .sci li i {
+    transform:  scale(0.5);
+   
+}
+@media(max-width:768px){
+    .login .imgBx{
+        position: absolute;
+        top:  0;
+        left:  0;
+        width: 100%;
+        height: 100%;
+    }
+    .login .contentBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+  
+    .login .contentBx .formBx{
+        width:  100%;
+        padding: 40px;
+        background:rgb(255 255 255/0.9);
+        margin:  50px;
+    }
+    .login .contentBx .formBx h3{
+        color: #03a9f4;
+        text-align:  center;
+        margin:30px 0 10px;
+        font-weight: 500;
+    }
+
+}
